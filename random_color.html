@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+#canvas {
+	width: 500px;
+	height: 500px;
+}
+.grid {
+	width: 50px;
+	height: 50px;
+	background-color: gray;
+	display: inline-block;
+	margin-bottom: -4px;
+}
+.grid:hover {
+	opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<div id="canvas"></div>
+<script type="text/javascript">
+//generate 100 grids on the div canvas
+for(var i = 0; i < 100; i++) {
+	var innerDiv = document.createElement('div');
+	innerDiv.className = 'grid';
+	var iDiv = document.getElementById('canvas');
+	iDiv.appendChild(innerDiv);
+}
+
+//mouse over divs changes color
+$('.grid').mouseover(function(){
+	var color = getRandomColor();
+	$(this).css('background-color', color);	
+});
+
+//random color generator
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+</script>
+</body>
+</html>
