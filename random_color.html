@@ -24,14 +24,14 @@
 <script type="text/javascript">
 //generate 100 grids on the div canvas
 for(var i = 0; i < 100; i++) {
-	var innerDiv = document.createElement('div');
-	innerDiv.className = 'grid';
-	var iDiv = document.getElementById('canvas');
-	iDiv.appendChild(innerDiv);
+	var grid_div = document.createElement('div');
+	grid_div.className = 'grid';
+	var canvas = document.getElementById('canvas');
+	canvas.appendChild(grid_div);
 }
 
 //mouse over divs changes color
-$('.grid').mouseover(function(){
+$('.grid').mouseover(function() {
 	var color = getRandomColor();
 	$(this).css('background-color', color);	
 });
