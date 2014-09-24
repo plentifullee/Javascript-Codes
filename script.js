@@ -1,32 +1,3 @@
-<!-- Javascript Projects and Experiments
-Mouse over and clicking on divs to randomly change it's color
-Created by plentifullee, visit my site at http://plenty.codes
--->
-
-<!DOCTYPE html>
-<html>
-<head>
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<style>
-#canvas {
-	width: 500px;
-	height: 500px;
-}
-.grid {
-	width: 50px;
-	height: 50px;
-	background-color: gray;
-	display: inline-block;
-	margin-bottom: -4px;
-}
-.grid:hover {
-	opacity: 0.6;
-}
-</style>
-</head>
-<body>
-<div id="canvas"></div>
-<script type="text/javascript">
 //generate 100 grids on the div canvas
 for(var i = 0; i < 100; i++) {
 	var grid_div = document.createElement('div');
@@ -53,6 +24,3 @@ function getRandomColor() {
     }
     return color;
 }
-</script>
-</body>
-</html>
