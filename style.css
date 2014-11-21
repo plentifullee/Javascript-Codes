@@ -1,3 +1,4 @@
+/****** random_color.html ******/
 #canvas {
 	width: 500px;
 	height: 500px;
@@ -12,3 +13,45 @@
 .grid:hover {
 	opacity: 0.6;
 }
+
+
+/****** keycode_colors.html ******/
+/* a to z */
+.c97 {color: red;}
+.c98 {color: blue;}
+.c99 {color: yellow;}
+.c100 {color: gray;}
+.c101 {color: yellow;}
+.c102 {color: brown;}
+.c103 {color: blue;}
+.c104 {color: gray;}
+.c105 {color: black;}
+.c106 {color: purple;}
+.c107 {color: brown;}
+.c108 {color: gray;}
+.c109 {color: blue;}
+.c110 {color: cyan;}
+.c111 {color: gray;}
+.c112 {color: magenta;}
+.c113 {color: orange;}
+.c114 {color: darkred;}
+.c115 {color: yellow;}
+.c116 {color: lightgreen;}
+.c117 {color: green;}
+.c118 {color: darkblue;}
+.c119 {color: lightblue;}
+.c120 {color: pink;}
+.c121 {color: yellow;}
+.c122 {color: black;}
+
+/* 0 to 9 */
+.c48 {color: black;}
+.c49 {color: gray;}
+.c50 {color: yellow;}
+.c51 {color: lightgreen;}
+.c52 {color: orange;}
+.c53 {color: blue;}
+.c54 {color: green;}
+.c55 {color: purple;}
+.c56 {color: brown;}
+.c57 {color: darkgreen;}

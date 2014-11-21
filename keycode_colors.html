@@ -1,0 +1,34 @@
+<!-- Javascript Projects and Experiments
+Specific color output for A-Z, 0-9
+Created by plentifullee, visit my site at http://plenty.codes
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="./style.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<input id="target" type="text" placeholder="type here">
+<h1 id="results" style="background-color: white;"></h1>
+<script src="//api.jquery.com/resources/events.js"></script>
+<script>
+$( "#target" ).keypress(function( event ) {
+  if(event.which == 32) { $('#results').append("<span> </span>"); } //space
+  
+  for(var i = 0; i < 26; i++) {
+    if(event.which == (97+i)) { //97 to 122
+      $('#results').append("<span class='c"+event.which+"'>"+String.fromCharCode(event.which)+"</span>");
+    } 
+  }
+
+  for(var j = 0; j < 10; j++) {
+    if(event.which == (48+j)) { //48 to 58
+      $('#results').append("<span class='c"+event.which+"'>"+String.fromCharCode(event.which)+"</span>");
+    }
+  }
+});
+</script>
+</body>
+</html>
